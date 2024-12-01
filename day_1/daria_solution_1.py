@@ -1,14 +1,15 @@
-# Open and read the file
-with open("test_input.txt") as file:
-    lines = file.readlines()
 
 # Parse into two lists
 list_1 = []
 list_2 = []
-for line in lines:
-    pair = line.strip().split()
-    list_1.append(int(pair[0]))
-    list_2.append(int(pair[1]))
+
+# Open and read the file
+with open("day_1/test_input.txt") as file:
+    for line in file:
+        i_1, i_2 = line.strip().split('   ')
+        list_1.append(int(i_1))
+        list_2.append(int(i_2))
+
 
 # Sort
 list_1.sort()
