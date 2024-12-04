@@ -1,3 +1,4 @@
+
 # Parse into two lists
 list_1 = []
 list_2 = []
@@ -19,3 +20,5 @@ differences = [abs(a - b) for a, b in zip(list_1, list_2)]
 
 # Sum up
 total_distance = sum(differences)
+
+print(f"The total distance between the lists is: {total_distance}")
